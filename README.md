@@ -1,6 +1,18 @@
-# Unsupervised Learning w Crypto
+# Search Traffic Financial Analysis and Forecast
 
-This Python application highlights the fundamentals of unsupervised learning by analyzing performance of cryptocurrencies. It illustrates the importance of finding optimal k-values for KMeans, the power of the elbow-graph visualization and finally, optimizing clusters for principal component analysis (or PCA). 
+This analysis reivews Mercado Libre, a South American e-commerce company. Using Google Colab, we aim to see if the ability to predict search traffic can translate into the ability to successfully trade the stock. The analysis is divided into five parts:
+1. Find unusual patterns in hourly Google search traffic
+- In part 1 we find that Google search traffic increased during the month that MErcadoLibre released its financial results. 
+2. Mining search traffic data for seasonality
+- In part 2, we can see that search traffih is concentrated between the hours of 23:00 and 02:00 each day.
+3. Relating search traffic to stock price patterns
+- In part 3 we see that there is a correlation among search trends and close prices. Morever, there is a negative correlation between search traffic and stock volatility and a positive relationship between search restuls and hourly stock return. 
+4. Creating time series model with Prophet
+- In part 4, using the Prophet functions, we see that 1am is the most popular time of day for search terms, Tuesday is the most popular day and October is the low point for all search traffic. 
+5. Forecasting revenue using time-series models
+- IN part 5 we see that peak revenue days are Wednesdays and Mercado's expected sales for the next quarter are 2163.
+
+After each section, there are questions and answers to ensure comprehension of the material 
 
 # Technologies
 
@@ -25,23 +37,12 @@ run pip install -r requirements.txt
 
 ## Usage
 
-1. Navigate to the directory in either the Terminal or GitBash. 
+1. Open Google Colab at colab.research.google.com
 
-2. From the top folder (Challenge_10), launch jupyter lab by typing 'jupyter lab' into Terminal or Gitbash and pressing 'Enter'
-<img width="468" alt="Screen Shot 2022-05-25 at 1 40 59 AM" src="https://user-images.githubusercontent.com/98444459/170188237-ad087d46-c859-47e4-a94b-1fe6b5a20034.png">
+2. When prompted to create a new notebook or load a file, click the upload tab and select the forecasting_net_prophet.ipnyb file.
+<img width="852" alt="Screen Shot 2022-06-05 at 7 31 20 PM" src="https://user-images.githubusercontent.com/98444459/172075112-667a4d2c-bf6c-4c4c-9a27-1a3766dae642.png">
 
-3. Open the 'crypto_investments.ipynb' notebook and follow the instructions therein.  
-<img width="366" alt="Screen Shot 2022-05-25 at 1 42 21 AM" src="https://user-images.githubusercontent.com/98444459/170188330-8a771741-fb37-4dad-9168-bb7c34aa8b93.png">
-
-4. The application begins by loading in the data from the resources folder. This will allow you to perform the necessary analyses leveraging KMeans later on. This data will also be prepared by a number of functions.
-<img width="374" alt="Screen Shot 2022-05-25 at 1 51 48 AM" src="https://user-images.githubusercontent.com/98444459/170189599-2d813f4f-ecb9-45ab-a712-747877ce2531.png">
-<img width="1234" alt="Screen Shot 2022-05-25 at 1 51 41 AM" src="https://user-images.githubusercontent.com/98444459/170189616-7e122280-6914-483a-9a4b-467ec90580d8.png">
-
-5. Subsequently, the analysis begins with the original data that has been prepared by the functions in the application, followed by a comparative analysis with PCA data. This comparative analysis allows the use to better understand the value of PCA data and explained variances. 
-<img width="710" alt="Screen Shot 2022-05-25 at 1 53 17 AM" src="https://user-images.githubusercontent.com/98444459/170189750-9f1cf828-5fe7-4d7d-90ce-098b0f0791a2.png">
-
-6. Lastly, the application illustrates the difference between the analyses using a side-by-side graphic, first with Elbow graphs, followed by scatter plots. 
-<img width="1442" alt="Screen Shot 2022-05-25 at 1 51 04 AM" src="https://user-images.githubusercontent.com/98444459/170189657-ae653e10-a998-4ab6-b9bf-40be6c51ab54.png">
+3. Follow the detailed instructions within the notebook file. 
 
 ---
 
